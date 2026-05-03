@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Login</title>
+  <style>
+    body{font-family:Inter,Arial;margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#f0f4f8}
+    .card{width:380px;background:linear-gradient(180deg,#ffffff,#fbfdff);border-radius:14px;box-shadow:0 8px 30px rgba(13,38,76,0.08);padding:28px}
+    h2{margin:0 0 12px 0;color:#0f1724}
+    .input{width:100%;padding:10px 12px;margin:8px 0;border-radius:8px;border:1px solid #e6eef6}
+    .btn{width:100%;padding:10px;border-radius:10px;border:0;background:#3b82f6;color:white;font-weight:600;cursor:pointer}
+    .small{font-size:13px;color:#64748b;margin-top:8px}
+    .error{background:#fff1f2;color:#9b1c2a;padding:8px;border-radius:6px;margin-bottom:10px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Admin Login</h2>
+
+    {% if error %}
+      <div class="error">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST">
+      <input class="input" name="username" placeholder="Username" required>
+      <input class="input" name="password" placeholder="Password" type="password" required>
+      <button class="btn" type="submit">Sign in</button>
+    </form>
+
+    <div class="small">UI style 2 — modern rounded card</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Face Attendance System</title>
+  <style>
+    body {
+      font-family: Inter, Arial;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #0f1724;
+      margin-bottom: 20px;
+    }
+    .video-box {
+      display: inline-block;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(13, 38, 76, 0.08);
+      padding: 10px;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎓 Face Attendance System</h1>
+
+  <!-- ✅ Auto-start video stream -->
+  <div class="video-box">
+    <img src="{{ url_for('video') }}" width="640" height="480" alt="Camera feed">
+  </div>
+
+  <div>
+    <a href="/admin/login" class="btn">Admin Login</a>
+  </div>
+</body>
+</html>

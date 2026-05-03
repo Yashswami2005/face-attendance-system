@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Add Student</title>
+  <style>
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      width: 420px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(13,38,76,0.08);
+      padding: 30px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 25px;
+      color: #0f172a;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      color: #334155;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      font-size: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+    a {
+      display: block;
+      margin-top: 15px;
+      color: #3b82f6;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>➕ Add New Student</h2>
+
+    <form method="POST">
+      <label>Student Name:</label>
+      <input type="text" name="name" placeholder="Enter Student Name" required>
+
+      <label>Roll No:</label>
+      <input type="text" name="roll_no" placeholder="Enter Roll Number" required>
+
+      <label>Branch:</label>
+      <input type="text" name="branch" placeholder="Enter Branch (e.g. CSE, IT, ECE)" required>
+
+      <label>Division:</label>
+      <input type="text" name="division" placeholder="Enter Division (e.g. A, B, C)" required>
+
+      <button type="submit">📸 Start Auto Capture (30 Photos)</button>
+    </form>
+
+    <a href="/admin">⬅️ Back to Dashboard</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* styles.css - clean professional look */
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0f62fe;
+  --border:#e6eefc;
+  --pill:#eef5ff;
+}
+
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+
+body{
+  margin:0;background:var(--bg);
+  color:#0f172a;
+}
+
+.container{
+  max-width:1100px;margin:28px auto;padding:20px;
+}
+
+header{display:flex;flex-direction:column;gap:4px;margin-bottom:18px}
+h1{margin:0;font-size:26px}
+.subtitle{margin:0;color:var(--muted)}
+
+.controls{display:flex;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.pill{
+  border:1px solid var(--border);background:var(--card);padding:12px 18px;border-radius:12px;
+  box-shadow: 0 2px 8px rgba(12,18,30,0.04);
+  cursor:pointer;font-weight:600;
+}
+.pill.primary{
+  background:linear-gradient(90deg,var(--accent),#4b8bff);color:white;border:none;
+  box-shadow:0 6px 20px rgba(15,98,254,0.18);
+}
+.pill:hover{transform:translateY(-2px);transition:all .15s ease}
+
+main{display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start}
+.panel{background:var(--card);padding:18px;border-radius:12px;border:1px solid var(--border);min-height:320px}
+.preview{background:linear-gradient(180deg,#fff,#fbfdff);padding:12px;border-radius:12px;border:1px solid var(--border);display:flex;flex-direction:column;align-items:center;gap:10px}
+
+video{width:320px;height:240px;background:#000;border-radius:8px;object-fit:cover;border:1px solid #dde9ff}
+.note{font-size:13px;color:var(--muted)}
+
+.form-row{display:flex;gap:10px;margin-bottom:12px}
+.form-row label{min-width:80px;color:var(--muted)}
+input[type="text"]{flex:1;padding:10px;border-radius:8px;border:1px solid #dfe8ff;background:#fbfdff}
+button.action{padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:white;font-weight:700;cursor:pointer}
+.button-ghost{background:transparent;border:1px dashed #cfe0ff;color:#0b3b8c;padding:8px 12px;border-radius:8px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:8px;border-bottom:1px solid #f1f5fb;text-align:left;font-size:14px}
+footer{margin-top:18px;color:var(--muted);font-size:13px}

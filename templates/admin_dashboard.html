@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Dashboard</title>
+  <style>
+    body{font-family:Inter,Arial;background:#f0f4f8;margin:0;padding:40px;color:#0f1724}
+    .card{max-width:500px;margin:auto;background:white;border-radius:14px;box-shadow:0 8px 30px rgba(13,38,76,0.08);padding:24px;text-align:center}
+    h2{margin-bottom:20px}
+    .btn{display:block;width:100%;margin:10px 0;padding:10px;background:#3b82f6;color:white;text-decoration:none;border-radius:10px;font-weight:600;transition:0.2s}
+    .btn:hover{background:#2563eb}
+    .logout{background:#ef4444}
+    .logout:hover{background:#dc2626}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Welcome, Admin</h2>
+    <a href="/add_student" class="btn">➕ Add Student</a>
+    <a href="/attendance" class="btn">📋 View Attendance</a>
+    <a href="/export_csv" class="btn">⬇️ Export Attendance CSV</a>
+    <a href="/admin/logout" class="btn logout">🚪 Logout</a>
+  </div>
+</body>
+</html>

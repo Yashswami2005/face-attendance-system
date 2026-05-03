@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+attendance.db
+face_trainer.yml
+labels.pickle
